@@ -2,9 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+     利德加工
     </p>
     <h3>Installed CLI Plugins</h3>
     <ul>
@@ -35,6 +33,19 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods:{
+    getAxios(){
+      console.log("getAxios()......")
+      this.$axios.get("http://www.baidu.com").then((res)=>{
+        console.log("www baidu com")
+      }).catch(error=>{
+        console.log(error)
+      })
+    }
+  },
+  mounted() {
+    this.getAxios();
   }
 }
 </script>
