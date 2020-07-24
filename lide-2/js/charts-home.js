@@ -80,14 +80,14 @@ $(document).ready(function () {
         type: 'doughnut',
         data: {
             labels: [
-                "正在加工工件数",
-                "已完成工件数",
-                "未加工工件数"
+                "已排程",
+                "部分排程",
+                "未排程"
             ],
             datasets: [
                 {
                     data: [652, 155, 342],
-                    borderWidth: [0.1, 1, 1],
+                    borderWidth: [1,1,1],
                     backgroundColor: [
                         brandPrimary,
                         "rgba(75,192,192,1)",
