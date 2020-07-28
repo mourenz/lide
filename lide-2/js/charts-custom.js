@@ -171,9 +171,9 @@ $(document).ready(function () {
                 label: 'My dataset' // for legend
             }],
             labels: [
-                "First",
-                "Second",
-                "Third"
+                "部分排程",
+                "全部排程",
+                "未排程"
             ]
         }
     });
