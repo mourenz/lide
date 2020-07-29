@@ -48,8 +48,8 @@
           <ul id="side-main-menu" class="side-menu list-unstyled">
             <li><a href="index.html"> <i class="icon-home"></i>总览                          </a></li>
             <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>流程管理</a>
-              <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                <li><a href="formsList.html"> <i class="icon-form"></i>订单管理</a></li>
+              <ul id="exampledropdownDropdown" class="">
+                <li><a href="formsList.html" style="background-color:rgb(51,179,90);"> <i class="icon-form"></i>订单管理</a></li>
                 <li><a href="#"><i class="icon-form"></i>配炉编辑</a></li>
                 <li><a href="#"><i class="icon-form"></i>调度单管理</a></li>
               </ul>
@@ -101,100 +101,113 @@
         <div class="container-fluid">
           <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">Tables       </li>
+            <li class="breadcrumb-item active">排程详细       </li>
           </ul>
         </div>
       </div>
       <section>
         <div class="container-fluid">
-          <!-- Page Header-->
-          <header>
-            <h1 class="h3 display">Tables            </h1>
-          </header>
+          <br>
+          <ul class="list-group">
+          <li class="list-group-item list-group-item-info">订单编号：20200721   &nbsp&nbsp&nbsp<span>工件类型: 铜片</span> &nbsp&nbsp&nbsp<span>工件数量:5000</span> &nbsp&nbsp&nbsp    <span>排程数量：5000</span></li>
+          </ul>
+          <br>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
               <div class="card">
                 <div class="card-header">
-                  <h4>Basic Table</h4>
+                  <h4>排程明细</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>First Name</th>
-                          <th>Last Name</th>
-                          <th>Username</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <span class="label label-default">所用工序</span>&nbsp&nbsp
+                    <button type="button" class="btn btn-default" alt="111">清洗</button>&nbsp
+                    <button type="button" class="btn btn-danger">渗碳</button>&nbsp
+                    <button type="button" class="btn btn-info">渗氮</button>&nbsp
+                    <button type="button" class="btn btn-success">中频淬火</button>&nbsp
+                    <button type="button" class="btn btn-success">检验</button>&nbsp <h3></h3>
+                    <div class="alert alert-info" role="alert">清洗: 2号清洗机</div>
+                    <div class="alert alert-info" role="alert">渗碳: 3号井式渗碳炉&nbsp&nbsp&nbsp设定指标:  温度:670&nbsp&nbsp 炭氏：0.23</div>
+                    <div class="alert alert-info" role="alert">渗氮: 3号井式渗碳炉&nbsp&nbsp&nbsp设定指标:  温度:730&nbsp&nbsp 氮氏：0.27</div>
+                    <div class="alert alert-info" role="alert">中频淬火: 8号淬火炉</div>
+                    <div class="alert alert-info" role="alert">检验: 根据GB003检验规则质检</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-7">
               <div class="card">
                 <div class="card-header">
-                  <h4>Striped Table</h4>
+                  <h4>当前执行调度单</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>First Name</th>
-                          <th>Last Name</th>
-                          <th>Username</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter                            </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="alert alert-warning" role="alert">
+                      <span class="pull-left">执行工序</span>&nbsp&nbsp&nbsp <span style="background-color: rgba(200,35,51);color: white">渗碳</span>
+                      <span class="pull-right">负责班组：A班组</span> <br>
+                      <span class="pull-left">开始时间：2020-07-21 18:31</span>
+                      <br>
+                      <span>工作设备: 3号渗碳炉</span>
+                      <br>
+                      <span>工作设备: 3号渗碳炉</span>
+                      <br>
+                      <span>工作设备: 3号渗碳炉</span>
+                      <br>
+                      <span>工作设备: 3号渗碳炉</span>
+                      <br>
+                      <span>工作设备: 3号渗碳炉</span>
+                      <br>
+                      <span>工作设备: 3号渗碳炉</span><br>
+                      <span>工作设备: 3号渗碳炉</span>
+                      <br>
+                      <span>工作设备: 3号渗碳炉</span>
+                      <br>
+                      <span>工作设备: 3号渗碳炉</span>
+                    <button class="btn btn-primary pull-right" style="border-radius:25px" data-toggle="modal" data-target="#myModal">查看明细</button>
+
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title"  id="myModalLabel">调度单明细</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                              Overflowing text to show scroll behavior
+
+                              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+                              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+                              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+
+                              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+                              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+                              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+
+                              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+                              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+                              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                              <button type="button" class="btn btn-primary">打印</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+          <!--  <div class="col-lg-6">
               <div class="card">
                 <div class="card-header">
                   <h4>Striped table with hover effect</h4>
@@ -293,10 +306,11 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
       </section>
+
       <footer class="main-footer">
         <div class="container-fluid">
           <div class="row">
