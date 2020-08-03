@@ -55,8 +55,8 @@
               </ul>
             </li>
             <li><a href="#sbManager" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>设备管理 </a>
-              <ul id="sbManager" class="collapse list-unstyled ">
-                <li><a href="sb-view.html">设备状态</a></li>
+              <ul id="sbManager">
+                <li><a href="#" style="background-color: rgba(51,179,90)">设备状态</a></li>
                 <li><a href="#">设备基础</a></li>
               </ul>
             </li>
@@ -70,13 +70,12 @@
       </div>
     </nav>
     <div class="page">
-      <!-- navbar-->
       <header class="header">
         <nav class="navbar">
           <div class="container-fluid">
             <div class="navbar-holder d-flex align-items-center justify-content-between">
               <div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="icon-bars"> </i></a><a href="index.html" class="navbar-brand">
-                  <div class="brand-text d-none d-md-inline-block"><strong class="text-primary">利德 热处理</strong></div></a></div>
+                <div class="brand-text d-none d-md-inline-block"><strong class="text-primary">利德 热处理</strong></div></a></div>
               <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                 <li class="nav-item"><a href="login.html" class="nav-link logout"> <span class="d-none d-sm-inline-block">注销</span><i class="fa fa-sign-out"></i></a></li>
               </ul>
@@ -84,139 +83,7 @@
           </div>
         </nav>
       </header>
-      <!-- Counts Section -->
-      <section class="dashboard-counts section-padding">
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Count item widget-->
-            <div class="col-xl-2 col-md-4 col-6">
-              <div class="wrapper count-title d-flex">
-                <div class="icon"><i class="icon-padnote"></i></div>
-                <div class="name"><strong class="text-uppercase">处理订单数</strong><span>近一年</span>
-                  <div class="count-number">85</div>
-                </div>
-              </div>
-            </div>
-            <!-- Count item widget-->
-            <div class="col-xl-2 col-md-4 col-6">
-              <div class="wrapper count-title d-flex">
-                <div class="icon"><i class="icon-padnote"></i></div>
-                <div class="name"><strong class="text-uppercase" style="width: 150px">当期加工订单数</strong><span>2020-7-21 9:20</span>
-                  <div class="count-number">5</div>
-                </div>
-              </div>
-            </div>
-            <!-- Count item widget-->
-            <div class="col-xl-2 col-md-4 col-6">
-              <div class="wrapper count-title d-flex">
-                <div class="icon"><i class="icon-check"></i></div>
-                <div class="name"><strong class="text-uppercase" style="width: 170px">当前未处理工件数</strong><span>2020-7-21 9:20</span>
-                  <div class="count-number">342</div>
-                </div>
-              </div>
-            </div>
-            <!-- Count item widget-->
-            <div class="col-xl-2 col-md-4 col-6">
-              <div class="wrapper count-title d-flex">
-                <div class="icon"><i class="icon-bill"></i></div>
-                <div class="name"><strong class="text-uppercase">累计交货数</strong><span>2015年开始</span>
-                  <div class="count-number">4,900</div>
-                </div>
-              </div>
-            </div>
-            <!-- Count item widget-->
-            <div class="col-xl-2 col-md-4 col-6">
-              <div class="wrapper count-title d-flex">
-                <div class="icon"><i class="icon-list"></i></div>
-                <div class="name"><strong class="text-uppercase">在职员工数</strong><span>2020年7月</span>
-                  <div class="count-number">92</div>
-                </div>
-              </div>
-            </div>
-            <!-- Count item widget-->
-            <div class="col-xl-2 col-md-4 col-6">
-              <div class="wrapper count-title d-flex">
-                <div class="icon"><i class="icon-list-1"></i></div>
-                <div class="name"><strong class="text-uppercase">客户数</strong><span>2020年6月</span>
-                  <div class="count-number">70</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
-      <!-- Header Section-->
-      <section class="dashboard-header section-padding">
-        <div class="container-fluid">
-          <div class="row d-flex align-items-md-stretch">
-            <!-- To Do List-->
-            <!-- Pie Chart-->
-            <div class="col-lg-3 col-md-6  offset-1">
-              <div class="card project-progress">
-                <h2 class="display h4">当前车间工件排程状态</h2>
-                <p> </p>
-                <div class="pie-chart">
-                  <canvas id="pieChart" width="300" height="300"> </canvas>
-                </div>
-              </div>
-            </div>
-            <!-- Line Chart -->
-            <div class="col-lg-6 col-md-12 flex-lg-last flex-md-first align-self-baseline offset-2">
-              <div class="card sales-report">
-                <h2 class="display h4">月份订单数统计</h2>
-                <p></p>
-                <div class="line-chart">
-                  <canvas id="lineCahrt"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Statistics Section-->
-      <section class="statistics">
-        <div class="container-fluid">
-          <div class="row d-flex">
-            <div class="col-lg-4">
-              <!-- Income-->
-              <div class="card income text-center">
-                <div class="icon"><i class="icon-line-chart"></i></div>
-                <div class="number">126,418 ￥</div><strong class="text-primary">2020年累计电费</strong>
-<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>-->
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <!-- Monthly Usage-->
-              <div class="card data-usage">
-                <h2 class="display h4">设备质量</h2>
-                <div class="row d-flex align-items-center">
-                  <div class="col-sm-6">
-                    <div id="progress-circle" class="d-flex align-items-center justify-content-center"></div>
-                  </div>
-                  <div class="col-sm-6"><strong class="text-primary">总设备:30</strong><small>当前-无设备故障信息</small><span></span></div>
-                </div>
-                <p></p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <!-- User Actibity-->
-              <div class="card user-activity">
-                <h2 class="display h4">今日车间考勤率</h2>
-                <h3 class="h4 display">一号车间</h3>
-                <div class="progress">
-                  <div role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar bg-primary">90%</div>
-                </div>
-                <div class="page-statistics d-flex justify-content-between">
-                  <div class="page-statistics-left"><span>车间工人数</span><strong>20</strong></div>
-                  <div class="page-statistics-right"><span>打卡人数</span><strong>18</strong></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Updates Section -->
+      <img id="sb-bgc" src="img/own/yt-sb.png" width="1300px" class="img-responsive">
     <!--  <section class="mt-30px mb-30px">
         <div class="container-fluid">
           <div class="row">
@@ -467,5 +334,20 @@
     <script src="js/charts-home.js"></script>
     <!-- Main File-->
     <script src="js/front.js"></script>
+  <script>
+    $(function(){
+      var flag = 0;
+
+      $("#toggle-btn").click(function () {
+        if(flag ==0){
+          $("#sb-bgc").attr('width','1400px');
+          flag = 1;
+        }else if(flag ==1){
+          $("#sb-bgc").attr('width','1300px');
+          flag = 0;
+        }
+      })
+    })
+  </script>
   </body>
 </html>
