@@ -186,6 +186,7 @@
                 <td align='center'>数量</td>
                 <td align='center'>交货日期</td>
                 <td align='center'>排程状态</td>
+				<td align='center'>箱号</td>
                 <td align="center">加工状态</td>
                 <td align='center'>操作</td>
               </tr>
@@ -195,8 +196,10 @@
                 <td align='center'>3000</td>
                 <td align='center'>2020-07-25</td>
                 <td align='center'>全部排程</td>
+				<td align='center'>A001</td>
                 <td align="center">[2500个: 渗碳 500个：淬火]</td>
-                <td align='center'><a href="tables.html">查看排程信息</a> </td>
+                <td align='center'><button type="button" class="btn btn-link" style="color:#009933" data-toggle="modal" data-target="#myModal">查看明细</button><a href="tables.html">查看排程信息</a> </td>
+                </td>
               </tr>
               <tr>
                 <td align='center'>20200721</td>
@@ -204,8 +207,10 @@
                 <td align='center'>3000</td>
                 <td align='center'>2020-07-25</td>
                 <td align='center'>全部排程</td>
+				<td align='center'>A001</td>
                 <td align="center">[2500个: 渗碳 500个：淬火]</td>
-                <td align='center'><a href="tables.html">查看排程信息</a> </td>
+                <td align='center'><button type="button" class="btn btn-link" style="color:#009933" data-toggle="modal" data-target="#myModal">查看明细</button><a href="tables.html">查看排程信息</a> </td>
+                </td>
               </tr>
               <tr>
                 <td align='center'>20200721</td>
@@ -213,8 +218,10 @@
                 <td align='center'>3000</td>
                 <td align='center'>2020-07-25</td>
                 <td align='center'>全部排程</td>
+				<td align='center'>A001</td>
                 <td align="center">[2500个: 渗碳&#45;&#45;500个：淬火]</td>
-                <td align='center'><a href="tables.html">查看排程信息</a> </td>
+                <td align='center'><button type="button" class="btn btn-link" style="color:#009933" data-toggle="modal" data-target="#myModal">查看明细</button><a href="tables.html">查看排程信息</a> </td>
+
               </tr>
               <tr>
                 <td align='center'>2020072</td>
@@ -222,8 +229,9 @@
                 <td align='center'>3000</td>
                 <td align='center'>2020-07-25</td>
                 <td align='center'>全部排程</td>
+				<td align='center'>A002</td>
                 <td align="center">[2500个: 渗碳&#45;&#45; 500个：淬火]</td>
-                <td align='center'><a href="tables.html">查看排程信息</a> </td>
+                <td align='center'><button type="button" class="btn btn-link" style="color:#009933" data-toggle="modal" data-target="#myModal">查看明细</button><a href="tables.html">查看排程信息</a> </td>
               </tr>
               <tr>
                 <td align='center'>20200721</td>
@@ -231,10 +239,89 @@
                 <td align='center'>3000</td>
                 <td align='center'>2020-07-25</td>
                 <td align='center'>全部排程</td>
+				<td align='center'>A002</td>
                 <td align="center">[2500个: 渗碳 &#45;&#45; 500个：淬火]</td>
-                <td align='center'><a href="tables.html">查看排程信息</a> </td>
+                <td align='center'><button type="button" class="btn btn-link" style="color:#009933" data-toggle="modal" data-target="#myModal">查看明细</button><a href="tables.html">查看排程信息</a> </td>
               </tr>
             </table>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document" >
+                <div class="modal-content" style="width:800px">
+                  <div class="modal-header">
+                    <h4 class="modal-title"  id="myModalLabel">工件完成记录</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div align="center">
+
+                    <table class="table table-hover">
+                      <tr>
+                        <td align='center'  style="vertical-align: middle !important;text-align: center;">调度单号</td>
+                        <td align='center'  style="vertical-align: middle !important;text-align: center;">工件编号</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">执行工序</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">开始时间</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">完成时间</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">交货时间</td>
+                        <td align="center" style="vertical-align: middle !important;text-align: center;">工艺总时间</td>
+                      </tr>
+                      <tr>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">DD20200721102TP </td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">AD0001</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">清洗</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020—08-01 12:00:00</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020—08-01 12:16:00</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020-08-03</td>
+                        <td align="center" style="vertical-align: middle !important;text-align: center;">16min</td>
+                      </tr>
+                      <tr>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">DD20200721102TP </td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">AD0002</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">清洗</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020—08-01 12:00:00</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020—08-01 12:16:00</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020-08-03</td>
+                        <td align="center" style="vertical-align: middle !important;text-align: center;">16min</td>
+                      </tr>
+                      <tr>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">DD20200721102TP </td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">AD0003</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">清洗</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020—08-01 12:00:00</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020—08-01 12:16:00</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020-08-03</td>
+                        <td align="center" style="vertical-align: middle !important;text-align: center;">16min</td>
+                      </tr>
+                      <tr>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">DD20200721102TP </td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">AD0004</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">清洗</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020—08-01 12:00:00</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020—08-01 12:16:00</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020-08-03</td>
+                        <td align="center" style="vertical-align: middle !important;text-align: center;">16min</td>
+                      </tr>
+                      <tr>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">DD20200721102TP </td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">AD0005</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">清洗</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020—08-01 12:00:00</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020—08-01 12:16:00</td>
+                        <td align='center' style="vertical-align: middle !important;text-align: center;">2020-08-03</td>
+                        <td align="center" style="vertical-align: middle !important;text-align: center;">16min</td>
+                      </tr>
+                    </table>
+
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary" data-dismiss="modal">确定</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
           </div>
           <ul class="pagination">
             <li><a href="#">«</a></li>
@@ -260,6 +347,7 @@
     </div>
   </footer>
 </div>
+
 <!-- JavaScript files-->
 
 <script src="vendor/jquery/jquery.min.js"></script>
